@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://dkaqngc53pefg"]
+
+[ext_resource type="Material" uid="uid://0d6sonavnjdj" path="res://Materials/BlueTransparent.tres" id="1_dbiew"]
+[ext_resource type="Material" uid="uid://biwxj383vp8d7" path="res://Materials/TextureBall.tres" id="2_1b25j"]
+[ext_resource type="Material" uid="uid://ctkp2k76wr4js" path="res://Materials/PinkBall.tres" id="3_cn4d6"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_pryy4"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_dbiew")
+mesh = SubResource("SphereMesh_pryy4")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.36597, 0, 0)
+material_override = ExtResource("2_1b25j")
+mesh = SubResource("SphereMesh_pryy4")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.82852, 0, 0)
+material_override = ExtResource("3_cn4d6")
+mesh = SubResource("SphereMesh_pryy4")
